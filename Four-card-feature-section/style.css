@@ -1,0 +1,115 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: hsl(0, 0%, 98%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+    max-width: 500px;
+}
+
+.header__regular-header {
+    font-size: 24px;
+    font-weight: 400;
+    color: hsl(234, 12%, 34%);
+}
+
+.header__bold-header {
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.header__light-paragraph {
+    font-size: 15px;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin: 20px 0 0 0;
+}
+
+/* Cards */
+
+.cards-container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .cards-container {
+        flex-direction: row;
+    }
+
+    .column {
+        padding: 0 30px;
+    }
+}
+.card {
+    max-width: 350px;
+    margin-bottom: 30px;
+    padding: 30px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+
+.card--cyan::after {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.card--red::after {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.card--orange::after {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.card--blue::after {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.card__image {
+    align-self: flex-end;
+}
+.card__header {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.card__paragraph {
+    font-size: 15px;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    margin: 15px 0 30px;
+}

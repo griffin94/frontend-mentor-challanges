@@ -171,6 +171,7 @@ img {
     color: hsl(0, 6%, 24%);
     letter-spacing: 1px;
     line-height: 140%;
+    margin-bottom: 20px;
 }
 
 .attribution a {

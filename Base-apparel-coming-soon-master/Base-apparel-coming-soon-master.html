@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
+<div class="main-wrapper">
 
   <img src="images/logo.svg" alt="logo-image" class="logo-image">
   <picture>
@@ -23,7 +24,11 @@
 
     <form class="main-section__form">
       <input type="email" placeholder="Email Address" class="main-section__input">
-      <button class="main-section__button"><img src="images/icon-arrow.svg"></button>
+      <button class="main-section__button">
+        <img src="images/icon-arrow.svg">
+        <img src="images/icon-error.svg" alt="error-icon" class="main-section__error-icon">
+      </button>
+      <div class="main-section__error-label">Please provide a valid email</div>
     </form>
     
     <footer>
@@ -33,5 +38,8 @@
       </p>
     </footer>
   </section>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>

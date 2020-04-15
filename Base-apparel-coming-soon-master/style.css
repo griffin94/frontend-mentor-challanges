@@ -11,26 +11,25 @@ body {
 }
 
 .main-wrapper {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 375px;
-}
-
-img {
-    max-width: 100%;
 }
 
 .logo-image {
     align-self: flex-start;
-    margin: 20px 0 20px 30px;
+    margin: 30px;
     max-width: 25%;
 }
 
+picture,
+.top-image {
+    width: 100%;
+}
+
 .main-section {
-    padding: 0px 40px;
+    padding: 0px 8%;
 }
 
 .main-section__header {
@@ -50,13 +49,12 @@ img {
 .main-section__paragraph {
     color: hsl(0, 36%, 70%);
     font-size: 14px;
-    line-height: 140%;
+    line-height: 150%;
 }
 
 .main-section__form {
     position: relative;
     margin: 30px 0px;
-    width: 100%;
 }
 
 .main-section__input {
@@ -64,7 +62,7 @@ img {
     width: 100%;
     padding: 0 100px 0 20px;
     border-radius: 24px;
-    border: 2px solid hsl(0, 80%, 86%);
+    border: 0.6px solid hsl(0, 36%, 70%);
     background: rgba(0,0,0,0);
 }
 
@@ -127,55 +125,3 @@ img {
     text-decoration: none;
 }
 
-@media (min-width: 768px) {
-    body {
-        display: flex;
-        align-items: center;
-    }
-    .main-wrapper {
-        max-width: 1440px;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 100%;
-        text-align: left;
-    }
-    .main-section,
-    .logo-image {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .main-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .main-section__paragraph {
-        font-size: 16px;
-        line-height: 160%;
-    }
-    .logo-image {
-        margin: 0px 0px 0px 40px;
-    }
-
-    .main-section__header {
-        font-size: 44px;
-        letter-spacing: 12px;
-    }
-    .main-section__input,
-    .main-section__input::placeholder {
-    font-size: 18px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .main-section {
-        padding: 0px 200px 0px 100px;
-    }
-    .logo-image {
-        margin: 60px 0px 0px 100px;
-    }
-    .main-section__header {
-        font-size: 60px;
-        letter-spacing: 16px;
-    }
-}

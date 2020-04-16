@@ -8,8 +8,7 @@
 
 body {
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)), linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-    height: 100vh;
-    overflow-y: hidden;
+    min-height: 100vh;
 }
 
 .main-wrapper {
@@ -175,9 +174,13 @@ picture,
         font-size: 82px;
     }
     .main-section {
-        padding: 0px 25% 0px 30px;
+        padding: 0px 35% 0px 30px;
     }
-    picture {
-        max-height: 100%;
+}
+
+@media (min-width: 1220px) {
+    picture,
+    .top-image {
+        width: auto;
     }
 }

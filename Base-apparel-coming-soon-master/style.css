@@ -86,6 +86,7 @@ picture,
     position: absolute;
     top: 0;
     right: 0px;
+    transition: 0.1s linear;
 }
 
 .main-section__button:hover {
@@ -104,12 +105,18 @@ picture,
     position: absolute;
     top: 12px;
     right: 120%;
+    display: none;
+}
+
+.main-section__error-icon--active {
+    display: initial;
 }
 
 .main-section__error-label {
     color: hsl(0, 93%, 68%);
     text-align: left;
     padding: 10px 20px;
+    height: 35px;
 }
 
 .attribution {

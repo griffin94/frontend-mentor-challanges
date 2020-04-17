@@ -15,6 +15,7 @@ emailInput.addEventListener('blur', () => {
     else {
         errorLabel.textContent = "Please provide a valid email";
         errorIcon.classList.add('main-section__error-icon--active');
+        isEmailValid = false;
     }
 })
 

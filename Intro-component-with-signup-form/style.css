@@ -150,6 +150,7 @@ body {
     .main-container {
         max-width: 1000px;
         display: flex;
+        padding: 20px;
     }
     .header,
     section {

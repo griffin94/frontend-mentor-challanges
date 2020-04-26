@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+}
+
+.main-container {
+    max-width: 400px;
+}
+
+.top-section,
+.middle-section,
+.bottom-section {
+    padding: 26px 20px;
+    background: #fff;
+}
+
+.top-section__header,
+.middle-section__header,
+.bottom-section__header {
+    font-size: 20px;
+}
+
+.top-section {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.top-section__header {
+    color: hsl(179, 62%, 43%);
+}
+
+.top-section__paragraph-green {
+    color: hsl(71, 73%, 54%);
+    margin: 20px 0px;
+}
+
+.top-section__paragraph {
+    color: hsl(218, 22%, 67%);
+    line-height: 140%;
+}
+
+.middle-section {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.middle-section__price-paragraph {
+    font-size: 34px;
+    margin: 10px 0px;
+}
+
+.middle-section__price {
+    font-size: 16px;
+    opacity: 0.6;   
+}
+
+
+.middle-section__paragraph {
+    opacity: 0.8;
+}
+
+.middle-section__button {
+    width: 100%;
+    height: 46px;
+    background: hsl(71, 73%, 54%);
+    border: 1px solid hsl(71, 73%, 54%);
+    border-radius: 4px;
+    margin-top: 28px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.middle-section__button:hover {
+    background: hsl(71, 90%, 39%);
+    border: 1px solid hsl(71, 90%, 39%);
+}
+
+.middle-section__button:focus {
+    outline: none;
+    border: 2px solid hsl(170, 85%, 18%);
+}
+
+.bottom-section {
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.8;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.bottom-section__paragraph {
+    margin-top: 20px;
+    opacity: 0.6;
+    line-height: 120%;
+}
+
+footer {
+    margin: 20px 0;
+    color: #000;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media (min-width: 755px) {
+    .main-container {
+        max-width: 600px;
+    }
+    .sections-row {
+        display: flex;
+    }
+
+    .middle-section,
+    .bottom-section {
+        flex: 1;
+        padding: 30px;
+    }
+
+    .bottom-section {
+        border-radius: 0px 0px 4px 0px;
+    }
+    .middle-section {
+        border-radius: 0px 0px 0px 4px;
+    }
+}

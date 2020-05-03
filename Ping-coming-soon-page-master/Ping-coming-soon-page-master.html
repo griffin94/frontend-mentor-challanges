@@ -5,23 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
   
   <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<div class="main-container">
 
-  We are launching soon!
+  <header class="header-section">
+    <img src="images/logo.svg" alt="logo-image" class="header-section__logo-image">
+    <h1 class="header-section__title"><span>We are launching</span> soon!</h1>
+    <p class="header-section__paragraph">Subscribe and get notified</p>
+  </header>
 
-  Subscribe and get notified
+  <form class="subscribe-form">
+    <input type="email" autocomplete="off" id="email" class="subscribe-form__email-input" placeholder="Your email address...">
+    <button class="subscribe-form__button">Notify Me</button>
+  </form>
 
-  Notify Me
+  <img src="images/illustration-dashboard.png" alt="dashboard-image" class="dashboard-image">
 
+  <section class="social-media-section">
+    <img src="" alt="social">
+    <img src="" alt="social">
+    <img src="" alt="social">
+  </section>
+  
   &copy; Copyright Ping. All rights reserved.
 
   <footer>
@@ -30,5 +40,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+</div>
 </body>
 </html>

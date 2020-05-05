@@ -20,7 +20,7 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- Gray: hsl(0, 0%, 59%)
+- Gray: hsl(0, 0%, 59%) h1
 - Very Dark Blue: hsl(209, 33%, 12%)
 
 ## Typography

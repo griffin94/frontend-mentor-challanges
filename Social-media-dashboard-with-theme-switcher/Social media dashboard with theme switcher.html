@@ -8,18 +8,25 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Frontend Mentor | Social media dashboard with theme switcher</title>
 </head>
-<body>
+<body class="changable">
 
 <div class="main-wrapper">
-  <header class="header">
-    <div class="header__left-container">
-      <h1 class="header__title">Social Media Dashboard</h1>
-      <p class="header__paragraph">Total Followers: 23,004</p>
+  
+  <header class="header changable">
+
+    <div class="header__left-container changable">
+      <h1 class="header__title changable">Social Media Dashboard</h1>
+      <p class="header__paragraph changable">Total Followers: 23,004</p>
     </div>
+
     <div class="header__right-container">
-      <p class="header__switch-label">Dark Mode</p>
-      <input type="checkbox" class="header__switch-checkbox">
+      <label for="header__switch-checkbox" class="header__switch-label changable">Dark Mode</p>
+      <div class="header__switch-checkbox-container">
+        <input type="checkbox" class="header__switch-checkbox" id="header__switch-checkbox">
+        <div class="header__switch-checkbox-slider"></div>
+      </div>
     </div>
+
   </header>
 
   <main>

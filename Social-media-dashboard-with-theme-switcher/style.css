@@ -122,13 +122,9 @@ body.dark-mode {
     left: 21px;
 }
 
-.header__switch-checkbox-container:hover .header__switch-checkbox-slider {
-    background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
-}
-
-@media (max-width: 754px) {
+@media (min-width: 755px){
     .header__switch-checkbox-container:hover .header__switch-checkbox-slider {
-        background: hsl(230, 22%, 74%);
+        background: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     }
 }
 

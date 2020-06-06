@@ -20,6 +20,11 @@ body.dark-mode {
     max-width: 1440px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     padding: 30px 20px;
     background: hsl(225, 100%, 98%);
@@ -170,14 +175,16 @@ body.dark-mode {
 .header__title,
 .big-tile__followers-number,
 .big-tile__followers-today,
-.small-tile__number {
+.small-tile__number,
+.small-tiles-group-title {
     color: hsl(230, 17%, 14%);
 }
 
 .header__title.dark-mode,
 .big-tile__followers-number.dark-mode,
 .big-tile__followers-today.dark-mode,
-.small-tile__number.dark-mode {
+.small-tile__number.dark-mode,
+.small-tiles-group-title.dark-mode {
     color: #fff;
 }
 
@@ -333,6 +340,14 @@ body.dark-mode {
     font-weight: 700;
 }
 
+.small-tiles-group-header {
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
+    margin: 30px 0px 30px;
+    font-size: 22px;
+}
+
 @media (min-width: 755px) {
     .small-tiles__row {
         flex-direction: row;
@@ -344,5 +359,16 @@ body.dark-mode {
     .small-tile:nth-child(4),
     .small-tile:nth-child(8) {
         margin-right: 0px;
+    }
+    .small-tiles-group-header {
+        align-self: flex-start;
+        margin: 30px 0px 0px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .small-tile {
+        padding: 20px 30px;
+        margin: 20px 20px 0px 0px;
     }
 }
